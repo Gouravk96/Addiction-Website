@@ -1,0 +1,551 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+ }
+ 
+ html {
+     scroll-behavior: smooth;
+ }
+ 
+ a {
+     text-decoration: none;
+ }
+ 
+ a:hover {
+     text-decoration: none;
+ }
+ 
+ li {
+     list-style: none;
+ }
+ 
+ p {
+     font-size: 0.9rem;
+     line-height: 1.6;
+     color: #606060;
+     font-weight: 400;
+ }
+ 
+ h2 {
+     font-size: 1.4rem;
+ }
+ 
+ .extradiv h2,
+ .servicediv h2 {
+     text-transform: uppercase;
+     font-size: 0.9rem;
+     margin: 20px 0 15px 0;
+     font-weight: bold;
+     line-height: 1.1;
+     word-spacing: 4px;
+ }
+ 
+ i {
+     color: #2fccd0;
+ }
+ 
+ #contactus {
+     transition: 0.3s ease;
+ }
+ 
+ h1 {
+     text-align: center;
+ }
+ /* --------------------------------actual css start--------------- */
+ 
+ .header {
+     width: 100%;
+     height: 100vh;
+     background-image: linear-gradient(rgba(0, 168, 255, 0.3), rgba(0, 168, 255, 0.3)), url("../images/a1.jpg");
+     background-repeat: no-repeat;
+     clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0% 75%, 0 0);
+     background-size: 100% 100%;
+     position: relative;
+ }
+ 
+ .header:before {
+     content: "";
+     width: 100%;
+     height: 100vh;
+     position: absolute;
+     top: 0%;
+     bottom: 0%;
+     left: 0%;
+     right: 0%;
+     opacity: .3;
+     background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+     z-index: -1;
+ }
+ 
+ .navbar:before {
+     content: "";
+     position: absolute;
+     top: 0%;
+     bottom: 0%;
+     left: 0%;
+     right: 0%;
+     opacity: .3;
+     background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+     z-index: -1;
+     position: relative;
+ }
+ 
+ .nav-brand {
+     color: #fff;
+ }
+ 
+ .nav-item a {
+     color: #fff!important;
+     font-weight: bold;
+ }
+ /* .header-section {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    color: white;
+    position: relative;
+    top: 50%;
+} */
+ 
+ .header-section {
+     width: 100%;
+     color: #fff;
+     text-align: center;
+     height: inherit;
+     position: relative;
+ }
+ 
+ .center-div {
+     width: 100%;
+     height: auto;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+     -webkit-transform: translate(-50%, -50%);
+ }
+ 
+ .header-buttons a {
+     border: 1px solid #fff;
+     margin: 0 5px;
+     padding: 12px 35px;
+     border-radius: 100px;
+     font-size: 1rem;
+     color: #fff;
+     font-weight: 400;
+     line-height: 1.4;
+     text-align: center;
+ }
+ 
+ .header-buttons a:hover {
+     background: #fff;
+     color: #16c9f6;
+     border: none;
+     text-decoration: none;
+     box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.3);
+ }
+ 
+ .center-div p {
+     padding: 10px 0 20px;
+     font-size: 1.4rem;
+     color: #fff;
+ }
+ /* _________________________extra div____________________________ */
+ 
+ .header-extra-div {
+     width: 100%;
+     height: auto;
+     margin: 80px 0;
+     text-align: center;
+ }
+ 
+ .extradiv {
+     background: #fff;
+     border: medium none;
+     border-radius: 3px;
+     padding: 50px!important;
+     border-radius: 3px;
+     transition: 1.2s;
+ }
+ 
+ .extradiv:hover {
+     box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.3);
+     transform: translateY(-20px)
+ }
+ /* ____________________________offer css start here______________________________ */
+ 
+ .offer-div {
+     background: #f7f7f7;
+     padding: 50px 0;
+     margin-bottom: 50px;
+ }
+ 
+ .headings {
+     margin-bottom: 50px;
+     /* margin-right: 50px; */
+ }
+ 
+ .headings h1 {
+     font-size: 1.5rem;
+     font-weight: 600;
+     text-transform: uppercase;
+ }
+ 
+ .name h3 {
+     color: #2e2e2e;
+     font-size: 0.9rem;
+     text-transform: capitalize;
+     text-align: left;
+     font-weight: bold;
+ }
+ 
+ .servicediv {
+     text-align: left;
+ }
+ 
+ .service-icons {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .progress {
+     height: 0.6rem!important;
+     margin-bottom: 25px!important;
+     width: 100%;
+ }
+ /* ____________________________offer css end here______________________________ */
+ 
+ .project-content {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     color: rgb(185, 55, 55)
+ }
+ 
+ .project {
+     margin: 100px 0px;
+ }
+ 
+ .project h1 {
+     font-size: 2rem;
+     text-align: center;
+ }
+ 
+ .project p {
+     margin-bottom: 50px;
+ }
+ /* ===========================Pricing start====================================== */
+ 
+ .pricing {
+     width: 100%;
+     height: 100vh;
+     margin: 100px 0;
+     position: relative;
+     padding: 50px 0;
+ }
+ 
+ .pricing:before {
+     content: "";
+     position: absolute;
+     top: 0%;
+     bottom: 0%;
+     left: 0%;
+     right: 0%;
+     z-index: -1;
+     background: linear-gradient(150deg, #16c9f6 55%, #fff 0%);
+ }
+ 
+ .pricing .headings h1 {
+     padding: 50px 0;
+     color: #fff!important;
+     margin: 0 auto;
+ }
+ 
+ .money {
+     /* color: #16c9f6; */
+     font-size: 40px;
+     line-height: 1;
+ }
+ 
+ .card-header {
+     font-size: 1.6rem;
+     font-weight: bold;
+     background: #fff;
+     padding: 25px 9!important;
+ }
+ 
+ .card-body {
+     padding: 30px 0;
+     background: #fff;
+ }
+ 
+ .card-body li {
+     margin: 10px 0;
+     font-size: 15px;
+     line-height: 1.6rem;
+     color: #606060;
+ }
+ 
+ .card-footer {
+     padding: 30px 0px;
+     background: #fff
+ }
+ 
+ .card-footer a {
+     border: 1px solid #16c9f6;
+     border-radius: 100px;
+     padding: 12px 35px;
+     color: #16c9f6;
+ }
+ 
+ .card-footer a:hover {
+     background: #16c9f6;
+     color: #fff;
+     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+ }
+ 
+ .card:hover {
+     transform: translateY(-20px);
+     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+ }
+ 
+ .second-card {
+     transform: translateY(-20px);
+     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+ }
+ 
+ .card:hover .card-header,
+ .card:hover .money {
+     color: #50d1c0;
+ }
+ 
+ .pricing .headings h1 {
+     padding: 50px 0 10px 0!important;
+     color: #000!important;
+ }
+ /* ===========================Pricing end====================================== */
+ /* --------------------------Customers start here----------------------- */
+ 
+ .customers {
+     width: 100%;
+     height: 100vh;
+     padding: 80px 0;
+ }
+ 
+ .box {
+     text-align: center;
+     border: 1px solid rgba(0, 0, 0, 0.2);
+     box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.3);
+     border-radius: 2px;
+     transition: 0.3 ease;
+ }
+ 
+ .box:hover {
+     background: #16c9f6;
+ }
+ 
+ .box:hover p {
+     color: #fff;
+ }
+ 
+ .carousel-indicators {
+     position: absolute;
+     /* background: grey; */
+     right: 0;
+ }
+ 
+ .carousel-indicators li {
+     color: #16c9f6!important;
+ }
+ 
+ .box a {
+     position: relative;
+ }
+ 
+ .box a img {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     margin: 20px 0 20px 0;
+ }
+ 
+ .box a:after {
+     content: "\f10d";
+     font-family: "Font Awesome\ 5 Free";
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+     position: absolute;
+     top: 120%;
+     left: 70%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .box h1 {
+     font-size: 20px;
+     font-weight: 400;
+     color: #000;
+     margin-bottom: 10px;
+ }
+ 
+ .box h2 {
+     font-size: 15px;
+     font-weight: 400;
+     color: #000;
+     margin-bottom: 10px;
+ }
+ /* --------------------------Customers end here----------------------- */
+ /* --------------------------Contact Start here-------------------------- */
+ 
+ .contact {
+     width: 100%;
+     margin: auto;
+     position: relative;
+     margin-top: 30px;
+ }
+ 
+ .contact:after {
+     content: "";
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     z-index: -1;
+     background: linear-gradient(340deg, #16c9f6 55%, #fff 0%)
+ }
+ 
+ .form-button button {
+     border: 1px solid;
+     padding: 12px 35px;
+     border-radius: 100px;
+     margin: 0 5px;
+     background: transparent;
+     font-size: 1.4rem;
+     font-weight: 400;
+     text-align: center;
+     color: #50d1c0;
+ }
+ 
+ form:hover .form-button button {
+     color: #50d1c0;
+     background: #fff;
+     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+ }
+ 
+ ::placeholder {
+     font-size: 0.8rems;
+ }
+ /* <!--=====================Newsletter start=================================--> */
+ 
+ .newsletter {
+     width: 100%;
+     height: auto;
+     margin: 50px 0;
+ }
+ 
+ .news-input {
+     border-radius: 100px;
+     min-width: 150px;
+     min-height: 45px;
+ }
+ 
+ .footersection {
+     background: #1e90ff;
+     width: 100%;
+     height: auto;
+     margin: 80px 0;
+     padding: 50px 0;
+ }
+ 
+ .footersection h1 {
+     font-size: 1.4rem;
+     color: white;
+     line-height: 2rem;
+     text-transform: uppercase;
+     margin: 0 0 1rem 0;
+     text-shadow: 0px 2px 5px rgba(0, 0, 0, 3);
+ }
+ 
+ .footersection p {
+     color: #fff;
+     font-size: .8rem;
+ }
+ 
+ .about,
+ .suscribe h1 {
+     text-align: justify;
+     text-align-last: left;
+ }
+ 
+ .navigation li {
+     text-align: center;
+     list-style: none;
+ }
+ 
+ .navigation a {
+     color: #fff;
+     font-size: 0.8rem;
+     font-weight: lighter;
+ }
+ 
+ .newsletter-main {
+     width: 100%;
+     min-width: 140px;
+     min-height: 70px;
+ }
+ 
+ #myBtn {
+     display: none;
+     position: fixed;
+     bottom: 20px;
+     right: 40px;
+     z-index: 99;
+     border: none;
+     color: #fff;
+     background: #00abff;
+     padding: 10px;
+     border-radius: 10px;
+ }
+ 
+ #myBtn:hover {
+     background: #606060
+ }
+ /* =============================Media Quries ============================= */
+ 
+ @media (max-width:768px) {
+     .nav-item {
+         text-align: center;
+     }
+     .header {
+         position: relative;
+     }
+     .pricing {
+         height: 100%;
+         /* width: 100% !important; */
+     }
+     .second-card {
+         transform: translateY(0px);
+         margin: 20px 0;
+     }
+     .customers {
+         height: auto;
+         margin-top: 80px!important;
+     }
+     .contact p {
+         padding: 0 50px;
+     }
+     .footersection .navigation {
+         text-justify: left;
+         text-align-last: left;
+     }
+ }
